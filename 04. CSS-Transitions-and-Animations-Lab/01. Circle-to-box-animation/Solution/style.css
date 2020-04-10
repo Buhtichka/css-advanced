@@ -1,0 +1,24 @@
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: circle-to-square 2s 1s infinite alternate;  
+  
+}
+
+@keyframes circle-to-square {
+    0% {
+        transform: scale(.3);
+        background-color: red;
+        border-radius: 100%;
+      }
+      100% {
+        border-radius: 0;
+        background-color: orange;
+      }
+  }
